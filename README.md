@@ -1,11 +1,9 @@
 # 포토그램 - 인스타그램 클론 코딩
 
-### STS 툴 버그가 발견되었습니다.
-- 아래 주소로 가서 4.0.6 버전으로 설치해주세요. 아니면 의존성 다운로드 79프로에서 무한루프가 발생합니다.
-- https://github.com/spring-projects/sts4/wiki/Previous-Versions
+### ReadME!
 
-### STS 툴에 세팅하기 - 플러그인 설정
-- https://blog.naver.com/getinthere/222322821611
+이 Repository는 codingspecialist님의 EaszUp-Springboot-Phtogram-Start 프로젝트를 fork 뜬 Repo입니다.  
+![위키](위키링크)에서 프로젝트 진행사항을 볼 수 있습니다.
 
 ### 의존성
 
