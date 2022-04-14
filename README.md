@@ -1,9 +1,9 @@
 # 포토그램 - 인스타그램 클론 코딩
 
-### ReadME!
+### REAM ME!
 
 이 Repository는 codingspecialist님의 EaszUp-Springboot-Phtogram-Start 프로젝트를 fork 뜬 Repo입니다.  
-![위키](위키링크)에서 프로젝트 진행사항을 볼 수 있습니다.
+[위키의 진행사항 page](https://github.com/dnwlsrla40/My-EaszUp-Photogram/wiki/%EC%A7%84%ED%96%89%EC%82%AC%ED%95%AD)에서 프로젝트 진행사항을 볼 수 있습니다.
 
 ### 의존성
 
