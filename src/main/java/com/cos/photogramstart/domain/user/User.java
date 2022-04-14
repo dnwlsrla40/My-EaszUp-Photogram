@@ -19,12 +19,16 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // pk 번호 증가 전략이 db를 따라간다.
     private int id;
 
+    @Column(unique = true)
     private String username;
+    @Column(nullable=false)
     private String password;
 
+    @Column(nullable=false)
     private String name;
     private String website; // 웹 사이트
     private String bio; // 자기소개
+    @Column(nullable=false)
     private String email;
     private String phone;
     private String gender;
