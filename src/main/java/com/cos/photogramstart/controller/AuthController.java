@@ -44,13 +44,13 @@ public class AuthController {
 
     @PostMapping("/auth/signup")
     public String signup(@Valid SignupDto signupDto, BindingResult bindingResult) { // key=value (x-www-form-urlencoded) 기본적으로 Spring Controller가 받는 형식
-        if(bindingResult.hasErrors()) {
+        if (bindingResult.hasErrors()) {
             Map<String, String> errorMap = new HashMap<>();
             for (FieldError error : bindingResult.getFieldErrors()) {
                 errorMap.put(error.getField(), error.getDefaultMessage());
             }
             throw new CustomValidationException("유효성 검사 실패함", errorMap);
-        }else {
+        } else {
             User user = signupDto.toEntity();
             User userEntity = authService.회원가입(user);
             System.out.println("userEntity = " + userEntity);
