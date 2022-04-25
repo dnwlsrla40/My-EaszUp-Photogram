@@ -24,7 +24,7 @@
                         <h1><img src="/images/logo.jpg" alt=""></h1>
                         
                         <!--로그인 인풋-->
-                        <form class="login__input" >
+                        <form class="login__input" action="/auth/signin" method="POST"> <!-- 주소창에 data가 안담기고 body에 담기 위해 post방식으로 로그인 -->
                             <input type="text" name="username" placeholder="유저네임" required="required" />
                             <input type="password" name="password" placeholder="비밀번호" required="required" />
                             <button>로그인</button>
