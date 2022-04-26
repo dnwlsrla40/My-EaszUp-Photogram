@@ -2,6 +2,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 
+<!-- security tag libs로 property="principal"를 통해 userDetails 가져옴 -->
+<!-- userDetails를 가져오므로 var 변수 명.user.field 를 해야 우리가 원하는 정보에 접근 가능 -->
+<sec:authorize access="isAuthenticated()">
+	<sec:authentication property="principal" var="principal"></sec:authentication>
+</sec:authorize>
+
 <!DOCTYPE html>
 <html lang="en">
 
