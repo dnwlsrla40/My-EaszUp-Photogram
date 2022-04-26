@@ -11,6 +11,7 @@ function update(userid) {
         dataType: "json"
     }).done(res => {
         console.log("update 성공");
+        location.href=`/user/${userid}`;
     }).fail(error => {
         console.log("update 실패");
     });
