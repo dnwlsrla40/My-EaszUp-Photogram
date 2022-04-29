@@ -12,7 +12,7 @@ function update(userid, event) {
         dataType: "json"
     }).done(res => {    // HttpStatus 상태코드 200번대면 여기로
         console.log("성공", res);
-        // location.href=`/user/${userid}`;
+        location.href=`/user/${userid}`;
     }).fail(error => {  // HttpStatus 상태코드 200번대가 아니면 여기로
         if(error.data == null) {
             alert(error.responseJSON.message);
