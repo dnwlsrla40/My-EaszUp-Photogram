@@ -1,6 +1,6 @@
 package com.cos.photogramstart.service;
 
-import com.cos.photogramstart.domain.subscribe.Subscribe;
+import com.cos.photogramstart.controller.handler.ex.CustomApiException;
 import com.cos.photogramstart.domain.subscribe.SubscribeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -15,10 +15,10 @@ public class SubscribeService {
 
     @Transactional
     public void 구독하기(int fromUserId, int toUserId) {
-        try{
+        try {
             subscribeRepository.mSubscribe(fromUserId, toUserId);
-        }catch (Exception e) {
-
+        } catch (Exception e) {
+            throw new CustomApiException("이미 구독을 하였습니다.");
         }
     }
 
