@@ -37,4 +37,7 @@ spring:
       password: 1234   
 
 file:
-  path: C:/Users/dnwls/IdeaProjects/study/My-EaszUp-Photogram/upload/
+  path: C:/Users/mycom/Documents/study/My-EaszUp-Photogram/upload/
+
+#  C:/Users/dnwls/IdeaProjects/study/My-EaszUp-Photogram/upload/
+#  C:/Users/mycom/Documents/study/My-EaszUp-Photogram/upload/

@@ -33,4 +33,16 @@ public class Image {
     public void createDate() {
         this.createDate = LocalDateTime.now();
     }
+
+    // Jpa 오브젝트 콘솔 출력 시 무한 참조 방지를 위해 toString 새로 만듬
+//    @Override
+//    public String toString() {
+//        return "Image{" +
+//                "id=" + id +
+//                ", caption='" + caption + '\'' +
+//                ", postImageUrl='" + postImageUrl + '\'' +
+//
+//                ", createDate=" + createDate +
+//                '}';
+//    }
 }
