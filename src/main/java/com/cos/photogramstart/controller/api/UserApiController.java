@@ -2,10 +2,9 @@ package com.cos.photogramstart.controller.api;
 
 import com.cos.photogramstart.config.auth.PrincipalDetails;
 import com.cos.photogramstart.controller.handler.ex.CustomValidationApiException;
-import com.cos.photogramstart.controller.handler.ex.CustomValidationException;
 import com.cos.photogramstart.domain.user.User;
 import com.cos.photogramstart.dto.CMRespDto;
-import com.cos.photogramstart.dto.UserUpdateDto;
+import com.cos.photogramstart.dto.user.UserUpdateDto;
 import com.cos.photogramstart.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
